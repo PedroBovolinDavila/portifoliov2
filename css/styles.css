@@ -5,12 +5,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #201F1F;
+}
+
 ul {
   list-style: none;
 }
 
 .header {
-  background-color: #140126;
+  background-color: #201F1F;
   height: 80px;
   padding: 2rem calc((100vw - 1200px) / 2);
   display: block;
@@ -68,11 +72,11 @@ ul {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: #140126;
+    background-color: #201F1F;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0;
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
@@ -93,12 +97,14 @@ ul {
   justify-content: center;
   padding: 1rem;
   text-align: center;
-  background-color: #140126;
+  background-color: white;
 }
 .loader-text {
   font-size: clamp(2rem, 2.5vw, 5rem);
-  color: white;
+  color: #201F1F;
+  font-family: "Luxurious Roman", cursive;
   letter-spacing: 8px;
+  line-height: 3.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,11 +8,13 @@
   justify-content: center;
   padding: 1rem;
   text-align: center;
-  background-color: variables.$purple-1;
+  background-color: white;
 
   &-text {
     font-size: clamp(2rem, 2.5vw, 5rem);
-    color: white;
+    color: variables.$dark;
+    font-family: 'Luxurious Roman', cursive;
     letter-spacing: 8px;
+    line-height: 3.6rem;
   }
 }

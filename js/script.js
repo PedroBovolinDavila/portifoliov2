@@ -3,13 +3,14 @@ const mobileIcon = document.querySelector('.header-mobile-icon');
 const navbar = document.querySelector('.header-navbar');
 const header = document.querySelector('.header');
 const loader = document.querySelector('.loader');
+const body = document.querySelector('body');
 
 gsap.registerPlugin(TextPlugin);
 
 // Loader 
 gsap.to('.loader-text', {
-  duration: 1.7,
-  text: 'Frase impactante vai vir aqui',
+  duration: 1.9,
+  text: 'Tire seus projetos do papel.',
   ease: 'none',
   onComplete: () => {
     setTimeout(() => {
@@ -73,7 +74,7 @@ mobileIcon.addEventListener('click', () => {
 
     gsap.to('.header-navbar', {
       duration: 0.5,
-      opacity: 0.5,
+      opacity: 0,
       y: '-100%',
       ease: "power2.inOut",
       delay: 0.9

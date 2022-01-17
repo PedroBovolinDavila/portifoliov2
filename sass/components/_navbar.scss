@@ -1,7 +1,7 @@
 @use '../config/variables';
 
 .header {
-  background-color: variables.$purple-1;
+  background-color: variables.$dark;
   height: 80px;
   padding: 2rem calc((100vw - 1200px) / 2);
   display: block;
@@ -68,11 +68,11 @@
       flex-direction: column;
       width: 100vw;
       height: 100vh;
-      background-color: variables.$purple-1;
+      background-color: variables.$dark;
       position: absolute;
       top: 0;
       left: 0;
-      opacity: 0.5;
+      opacity: 0;
       align-items: center;
       justify-content: center;
       transform: translateY(-100%);
