@@ -1,0 +1,18 @@
+@use '../config/variables';
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: variables.$purple-1;
+
+  &-text {
+    font-size: clamp(2rem, 2.5vw, 5rem);
+    color: white;
+    letter-spacing: 8px;
+  }
+}
