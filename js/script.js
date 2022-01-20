@@ -4,13 +4,14 @@ const navbar = document.querySelector('.header-navbar');
 const header = document.querySelector('.header');
 const loader = document.querySelector('.loader');
 const body = document.querySelector('body');
+const main = document.querySelector('.main');
 
 gsap.registerPlugin(TextPlugin);
 
 // Loader 
 gsap.to('.loader-text', {
   duration: 1.9,
-  text: 'Tire seus projetos do papel.',
+  text: 'Olá, seja bem vindo!',
   ease: 'none',
   onComplete: () => {
     setTimeout(() => {
@@ -22,23 +23,51 @@ gsap.to('.loader-text', {
 
       gsap.to('.loader', {
         delay: 0.6,
-        duration: 0.2,
+        duration: 0.3,
         scale: 0,
         onComplete: () => {
           loader.style.display = 'none'
           header.style.display = 'block'
+          main.style.display = 'block'
 
           gsap.fromTo('.header', {
             y: -80
           }, {
             y: 0,
             duration: 1,
+            delay: 2.6,
             clearProps: 'y,duration'
+          })
+
+          gsap.fromTo(['.hero-title', '.hero-img', '.triangle'], {
+            opacity: 0,
+          }, {
+            y: 0,
+            opacity: 1,
+            delay: 0.2,
+            duration: 1.5,
+
+          })
+
+          gsap.to('.hero-desc', {
+            duration: 1.5,
+            delay: 1,
+            text: 'Sou desenvolvedor web Fullstack',
+            ease: 'none'
+          })
+
+          gsap.to('.social-icon', {
+            duration: 1.7,
+            opacity: 1,
+            x: 0,
+            delay: 2.6,
+            stagger: 0.4,
+            ease: "back.out(0.7)"
           })
         }
       })
       
-    }, 1200);
+    }, 1500);
   }
 })
 

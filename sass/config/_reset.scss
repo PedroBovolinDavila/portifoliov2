@@ -12,6 +12,15 @@ body {
   background-color: variables.$dark;
 }
 
+main {
+  display: none;
+}
+
 ul {
   list-style: none;
+}
+
+::selection {
+  background-color: variables.$purple-5;
+  color: white;
 }

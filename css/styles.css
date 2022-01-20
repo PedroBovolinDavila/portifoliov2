@@ -9,12 +9,21 @@ body {
   background-color: #201F1F;
 }
 
+main {
+  display: none;
+}
+
 ul {
   list-style: none;
 }
 
+::selection {
+  background-color: #C291F2;
+  color: white;
+}
+
 .header {
-  background-color: #201F1F;
+  background-color: transparent;
   height: 80px;
   padding: 2rem calc((100vw - 1200px) / 2);
   display: block;
@@ -24,7 +33,7 @@ ul {
   display: none !important;
   font-size: 1.5rem;
   color: white;
-  z-index: 1;
+  z-index: 2;
 }
 .header-menu {
   display: flex;
@@ -80,6 +89,7 @@ ul {
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
+    z-index: 1;
   }
   .header-navbar li {
     transform: translateX(-100vw);
@@ -105,6 +115,77 @@ ul {
   font-family: "Luxurious Roman", cursive;
   letter-spacing: 8px;
   line-height: 3.6rem;
+}
+
+.hero {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  text-align: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.hero-title {
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.hero-desc {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  margin-bottom: 5%;
+}
+.hero-img {
+  width: 350px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: 200px;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 41%;
+  left: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  color: white;
+  transition: all 0.2s ease;
+  transform: translateX(-100vw);
+}
+.social-icon:hover {
+  color: #C291F2;
+  margin: 5px 0;
+  transform: scale(1.123);
+}
+
+.triangle {
+  clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 95%);
+  background-color: #181818;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
