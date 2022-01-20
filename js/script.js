@@ -39,7 +39,7 @@ gsap.to('.loader-text', {
             clearProps: 'y,duration'
           })
 
-          gsap.fromTo(['.hero-title', '.hero-img', '.triangle'], {
+          gsap.fromTo(['.hero-title', '.hero-img', '.triangle', '.about'], {
             opacity: 0,
           }, {
             y: 0,

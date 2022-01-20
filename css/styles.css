@@ -177,8 +177,6 @@ ul {
 }
 
 .triangle {
-  clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 95%);
-  background-color: #181818;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -186,6 +184,20 @@ ul {
   width: 100%;
   opacity: 0;
   height: 100%;
+  background-color: #181818;
+}
+.triangle.triangle-right {
+  clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 95%);
+}
+.triangle.triangle-left {
+  clip-path: polygon(0 0, 0 5%, 95% 100%, 100% 100%, 100% 0);
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 20px);
+  position: relative;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,8 @@
+@use '../config/variables';
+
+.about {
+  width: 100%;
+  height: calc(100vh - 20px);
+  position: relative;
+  opacity: 0;
+}

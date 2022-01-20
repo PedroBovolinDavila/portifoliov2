@@ -1,8 +1,7 @@
 @use '../config/variables';
 
+
 .triangle {
-  clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 95%);
-  background-color: variables.$dark-2;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -10,4 +9,21 @@
   width: 100%;
   opacity: 0;
   height: 100%;
+  background-color: variables.$dark-2;
+  
+  &.triangle-right {
+    clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 95%);
+  }
+  
+  &.triangle-left {
+    clip-path: polygon(0 0, 0 5%, 95% 100%, 100% 100%, 100% 0);
+  }
+  
+  // &.primary {
+    // background-color: variables.$dark-2;  
+  // }
+  
+  // &.secondary {
+  //   background-color: variables.$dark;
+  // }
 }
