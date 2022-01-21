@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
   text-align: center;
   flex-direction: column;
   padding: 1rem;
@@ -31,9 +31,8 @@
     -ms-user-select: none;
     user-select: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {    
       width: 200px;
     }
   }
 }
-

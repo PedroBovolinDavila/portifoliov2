@@ -6,7 +6,8 @@ const loader = document.querySelector('.loader');
 const body = document.querySelector('body');
 const main = document.querySelector('.main');
 
-gsap.registerPlugin(TextPlugin);
+// GSAP PLUGINS
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 // Loader 
 gsap.to('.loader-text', {
@@ -64,6 +65,43 @@ gsap.to('.loader-text', {
             stagger: 0.4,
             ease: "back.out(0.7)"
           })
+
+          // ********************* \\
+          // * Scroll Animations * \\
+          // ********************* \\
+
+          // About section
+
+          gsap.fromTo('.about-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.about-text-container',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
+
+          gsap.fromTo('.about-desc', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.about-text-container',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
+
+          gsap.fromTo('.about-img', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.about-text-container',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
         }
       })
       
@@ -72,7 +110,8 @@ gsap.to('.loader-text', {
 })
 
 // Show Menu
-mobileIcon.addEventListener('click', () => {
+
+const handleOpenMenu = () => {
   navbar.classList.toggle('active')
 
   if (document.querySelector('.active')) {
@@ -109,4 +148,7 @@ mobileIcon.addEventListener('click', () => {
       delay: 0.9
     })
   }
-});
+}
+
+mobileIcon.addEventListener('click', handleOpenMenu);
+navbar.addEventListener('click', handleOpenMenu)
