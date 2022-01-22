@@ -68,6 +68,14 @@ gsap.to('.loader-text', {
             ease: "back.out(0.7)"
           })
 
+          gsap.fromTo('.scroll-down', {
+            opacity: 0
+          }, {
+            duration: 2.5,
+            opacity: 1,
+            delay: 4.8
+          })
+
           // ********************* \\
           // * Scroll Animations * \\
           // ********************* \\
@@ -140,9 +148,9 @@ gsap.to('.loader-text', {
               delay: 0.2
             })
           }
+
         }
       })
-
     }, 1500);
   }
 })
