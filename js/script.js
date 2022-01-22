@@ -102,9 +102,64 @@ gsap.to('.loader-text', {
             opacity: 1,
             delay: 0.4
           })
+
+          gsap.fromTo('.about-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.about-text-container',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
+
+          // Projects section
+
+          gsap.fromTo('.projects-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.projects-text-container',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
+
+          gsap.fromTo('.projects-desc', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.projects-text-container',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
+
+          gsap.fromTo('.projects-img', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.projects-text-container',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
+
+          gsap.fromTo('.projects-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.projects-text-container',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
         }
       })
-      
+
     }, 1500);
   }
 })
@@ -151,4 +206,13 @@ const handleOpenMenu = () => {
 }
 
 mobileIcon.addEventListener('click', handleOpenMenu);
-navbar.addEventListener('click', handleOpenMenu)
+
+const addNavbarCloseFunction = () => {
+  const width = window.innerWidth
+
+  if (width > 768) return;
+
+  navbar.addEventListener('click', handleOpenMenu)
+}
+
+window.addEventListener('resize', addNavbarCloseFunction)

@@ -149,9 +149,6 @@ ul {
   user-select: none;
 }
 @media screen and (max-width: 768px) {
-  .hero {
-    height: auto;
-  }
   .hero-img {
     width: 200px;
   }
@@ -184,9 +181,9 @@ ul {
   z-index: -1;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 105%;
   opacity: 0;
-  height: 100%;
+  height: 105%;
   background-color: #181818;
 }
 .triangle.triangle-right {
@@ -292,6 +289,55 @@ ul {
 @media screen and (max-width: 567px) {
   .subtitle {
     margin: 50px 0 60px 0;
+  }
+}
+
+.projects {
+  width: 100%;
+  position: relative;
+  background-color: #181818;
+  display: flex;
+  padding: 6.7rem calc((100vw - 1200px) / 2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.projects-desc {
+  width: 50%;
+  margin-right: 5%;
+  color: #e7e4e4;
+  line-height: 25px;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+.projects-desc > p {
+  text-indent: 25px;
+}
+.projects-img {
+  padding: 0 1rem;
+  width: 50%;
+}
+.projects-img > img {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .projects-text-container {
+    flex-direction: column;
+  }
+  .projects-img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  .projects-desc {
+    width: 100%;
+    margin: 0;
   }
 }
 
