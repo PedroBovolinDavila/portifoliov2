@@ -149,6 +149,9 @@ ul {
   user-select: none;
 }
 @media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+  }
   .hero-img {
     width: 200px;
   }
