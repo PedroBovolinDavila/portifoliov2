@@ -6,6 +6,7 @@ const loader = document.querySelector('.loader');
 const body = document.querySelector('body');
 const main = document.querySelector('.main');
 const projectCards = document.querySelectorAll('.projects-card');
+const projectCardsAnimateActivate = document.querySelectorAll('.project-card-animation');
 
 // GSAP PLUGINS
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -133,11 +134,10 @@ gsap.to('.loader-text', {
               opacity: 0,
               y: 150
             }, {
-              scrollTrigger: projectCards[i],
+              scrollTrigger: projectCardsAnimateActivate[i],
               y: 0,
               opacity: 1,
-              duration: 1,
-              delay: 0.5
+              delay: 0.2
             })
           }
         }
