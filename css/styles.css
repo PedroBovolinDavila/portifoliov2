@@ -23,6 +23,13 @@ ul {
   color: white;
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
 .header {
   background-color: transparent;
   height: 80px;
@@ -141,12 +148,6 @@ ul {
 }
 .hero-img {
   width: 350px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 @media screen and (max-width: 768px) {
   .hero-img {
@@ -290,31 +291,6 @@ ul {
 @media screen and (max-width: 567px) {
   .subtitle {
     margin: 50px 0 60px 0;
-  }
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 10%;
-  color: white;
-  animation: pulse 2s infinite;
-  text-decoration: none;
-}
-.scroll-down i {
-  margin-left: 5px;
-}
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
   }
 }
 
