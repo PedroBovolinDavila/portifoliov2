@@ -5,6 +5,7 @@ const header = document.querySelector('.header');
 const loader = document.querySelector('.loader');
 const body = document.querySelector('body');
 const main = document.querySelector('.main');
+const projectCards = document.querySelectorAll('.projects-card');
 
 // GSAP PLUGINS
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -120,43 +121,25 @@ gsap.to('.loader-text', {
             y: -150,
             opacity: 0,
           }, {
-            scrollTrigger: '.projects-text-container',
+            scrollTrigger: '.projects-cards-container',
             y: 0,
             duration: 1.5,
             opacity: 1,
             delay: 0.2
           })
 
-          gsap.fromTo('.projects-desc', {
-            y: 150,
-            opacity: 0,
-          }, {
-            scrollTrigger: '.projects-text-container',
-            y: 0,
-            opacity: 1,
-            delay: 0.4
-          })
-
-          gsap.fromTo('.projects-img', {
-            y: 150,
-            opacity: 0,
-          }, {
-            scrollTrigger: '.projects-text-container',
-            y: 0,
-            opacity: 1,
-            delay: 0.4
-          })
-
-          gsap.fromTo('.projects-title', {
-            y: -150,
-            opacity: 0,
-          }, {
-            scrollTrigger: '.projects-text-container',
-            y: 0,
-            duration: 1.5,
-            opacity: 1,
-            delay: 0.2
-          })
+          for (let i = 0; i < projectCards.length; i++) {
+            gsap.fromTo(projectCards[i], {
+              opacity: 0,
+              y: 150
+            }, {
+              scrollTrigger: projectCards[i],
+              y: 0,
+              opacity: 1,
+              duration: 1,
+              delay: 0.5
+            })
+          }
         }
       })
 

@@ -51,7 +51,7 @@
           <a href="#about">Sobre</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="#projects">Projetos</a>
         </li>
         <li>
           <a href="#">Techs</a>
@@ -65,9 +65,9 @@
     </nav>
   </header>
   
-  <div class="triangle triangle-right primary"></div>
   
   <main class="main">
+    <div class="triangle triangle-right primary"></div>
     <div class="social">
       <a title="Entre em contato via Whatsapp" class="social-icon" target="_blank" href="https://wa.me/5543991499339"><i class="fab fa-whatsapp"></i></a>
       <a title="Entre em contato via Email" class="social-icon" target="_blank" href="mailto:pedrodavila.bovolin@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -96,64 +96,95 @@
     </section>
 
     <section class="projects" id="projects">
-      <h2 class="projects-title title">Sobre</h2>
-      <div class="projects-text-container">
-        <article class="projects-desc projects-animation">
-          <h3 class="subtitle">Minha historia</h3>
-          <p>
-            Olá, me chamo Pedro nasci em 2007 na cidade de Londrina no Paraná. Meu interesse em programação começou logo que ganhei meu primeiro computador em 2020, porem somente em 2021 que começei a estudar de verdade. Aprendi o basico de HTML, CSS e JS no canal Curso em Video e logo depois comecei a estudar C# no canal CFB Cursos e na metade de 2021 comprei o curso Programador BR onde aprendi praticamente tudo que ultilizo atualmente. Espero que goste de meus projetos!
-          </p>
+      <h2 class="projects-title title">Projetos</h2>
+        <article class="projects-cards-container projects-animation">
+          
+          <div class="projects-card">
+            <div class="projects-card-desc">
+              <h3 class="subtitle">Lux Fitness</h3>
+              <p>
+                O site Lux Fitness foi feito durante um curso de <a target="_blank" href="https://greensock.com/gsap">GREENSOCK</a>, que é uma biblioteca Javascript para animações.
+              </p>
+              <div class="projects-card-button-container">
+                <a target="_blank" href="https://pedrobovolindavila.github.io/Lux-academia/">Site</a>
+                <a target="_blank" href="https://github.com/PedroBovolinDavila/Lux-academia">Github</a>
+              </div>
+            </div>
+            <figure class="projects-card-img">
+              <img src="images/lux.png" alt="Imagem do projeto Lux Fitness">
+            </figure>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-desc">
+              <h3 class="subtitle">Landing Page</h3>
+              <p> 
+                Landing page feita com HTML e SCSS. Feito para treinar o conhecimento de um curso de Scss
+              </p>
+              <div class="projects-card-button-container">
+                <a target="_blank" href="https://landingpage-sass.netlify.app">Site</a>
+                <a target="_blank" href="https://github.com/PedroBovolinDavila/sass-landing-page">Github</a>
+              </div>
+            </div>
+            <figure class="projects-card-img">
+              <img src="images/sass-landing.png" alt="Imagem do projeto Lux Fitness">
+            </figure>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-desc">
+              <h3 class="subtitle">Galleria</h3>
+              <p> 
+                Galeria de fotos feita durante um curos de Scss, um pré-processador Css <br>
+                O projeto esta mal otimizado
+              </p>
+              <div class="projects-card-button-container">
+                <a target="_blank" href="https://galleriasass.netlify.app">Site</a>
+                <a target="_blank" href="https://github.com/PedroBovolinDavila/galleria">Github</a>
+              </div>
+            </div>
+            <figure class="projects-card-img">
+              <img src="images/galleria.png" alt="Imagem do projeto Lux Fitness">
+            </figure>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-desc">
+              <h3 class="subtitle">Buscar Cep</h3>
+              <p> 
+                Site feito para buscar ceps de todo o Brasil. Está consumindo a API do <a target="_blank" href="https://viacep.com.br">Viacep</a>
+              </p>
+              <div class="projects-card-button-container">
+                <a target="_blank" href="https://buscar-cep.netlify.app">Site</a>
+                <a target="_blank" href="https://github.com/PedroBovolinDavila/buscador-de-cep">Github</a>
+              </div>
+            </div>
+            <figure class="projects-card-img">
+              <img src="images/buscar-cep.png" alt="Imagem do projeto Lux Fitness">
+            </figure>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-desc">
+              <h3 class="subtitle">Portifolio - 1</h3>
+              <p> 
+                Portifolio antigo feito com HTML, CSS, JS e GSAP
+              </p>
+              <div class="projects-card-button-container">
+                <a target="_blank" href="https://pedrodavila-2.netlify.app">Site</a>
+                <a target="_blank" href="https://github.com/PedroBovolinDavila/portifolio">Github</a>
+              </div>
+            </div>
+            <figure class="projects-card-img">
+              <img src="images/portifolio2.png" alt="Imagem do projeto Lux Fitness">
+            </figure>
+          </div>
+
         </article>
-        <figure class="projects-img">
-          <img src="images/about.svg" alt="Ilustração da seção Sobre">
-        </figure>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <h2 class="about-title title">Sobre</h2>
-      <div class="about-text-container">
-        <article class="about-desc about-animations">
-          <h3 class="subtitle">Minha historia</h3>
-          <p>
-            Olá, me chamo Pedro nasci em 2007 na cidade de Londrina no Paraná. Meu interesse em programação começou logo que ganhei meu primeiro computador em 2020, porem somente em 2021 que começei a estudar de verdade. Aprendi o basico de HTML, CSS e JS no canal Curso em Video e logo depois comecei a estudar C# no canal CFB Cursos e na metade de 2021 comprei o curso Programador BR onde aprendi praticamente tudo que ultilizo atualmente. Espero que goste de meus projetos!
-          </p>
-        </article>
-        <figure class="about-img">
-          <img src="images/about.svg" alt="Ilustração da seção Sobre">
-        </figure>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <h2 class="about-title title">Sobre</h2>
-      <div class="about-text-container">
-        <article class="about-desc about-animations">
-          <h3 class="subtitle">Minha historia</h3>
-          <p>
-            Olá, me chamo Pedro nasci em 2007 na cidade de Londrina no Paraná. Meu interesse em programação começou logo que ganhei meu primeiro computador em 2020, porem somente em 2021 que começei a estudar de verdade. Aprendi o basico de HTML, CSS e JS no canal Curso em Video e logo depois comecei a estudar C# no canal CFB Cursos e na metade de 2021 comprei o curso Programador BR onde aprendi praticamente tudo que ultilizo atualmente. Espero que goste de meus projetos!
-          </p>
-        </article>
-        <figure class="about-img">
-          <img src="images/about.svg" alt="Ilustração da seção Sobre">
-        </figure>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <h2 class="about-title title">Sobre</h2>
-      <div class="about-text-container">
-        <article class="about-desc about-animations">
-          <h3 class="subtitle">Minha historia</h3>
-          <p>
-            Olá, me chamo Pedro nasci em 2007 na cidade de Londrina no Paraná. Meu interesse em programação começou logo que ganhei meu primeiro computador em 2020, porem somente em 2021 que começei a estudar de verdade. Aprendi o basico de HTML, CSS e JS no canal Curso em Video e logo depois comecei a estudar C# no canal CFB Cursos e na metade de 2021 comprei o curso Programador BR onde aprendi praticamente tudo que ultilizo atualmente. Espero que goste de meus projetos!
-          </p>
-        </article>
-        <figure class="about-img">
-          <img src="images/about.svg" alt="Ilustração da seção Sobre">
-        </figure>
-      </div>
-    </section>
+    <span>Site em desenvolvimento!</span>
 
   </main>
 
