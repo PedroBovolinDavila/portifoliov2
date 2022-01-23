@@ -1,0 +1,92 @@
+@use '../config/variables';
+
+
+
+.services {
+  width: 100%;
+  padding: 6.7rem calc((100vw - 1350px) / 2);
+  background-color: variables.$dark-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-button {
+    font-weight: bold;    
+    text-decoration: none;
+    color: white; 
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-exemple {
+    margin-bottom: 30px;
+  }
+
+  &-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0 1rem;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: variables.$dark-text;
+    border: 1px solid variables.$purple-5;
+    padding: 2.5rem 3rem;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all .3s ease;
+    width: 50%;
+    height: 400px;
+
+    &:hover {
+      border-radius: 15px;
+      box-shadow: 0 0 30px 2px  rgba(194,145,242,0.13);
+    }
+
+    &-header {
+      width: 100%;
+
+      img {
+        margin-bottom: 15px;
+        color: white;
+      }
+    }
+
+    &-subtitle {
+      font-size: 2.2rem;
+    }
+
+    &-body {
+      font-size: 1.2rem;
+      margin-bottom: 2%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-card-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-card {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &-card {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

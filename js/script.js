@@ -34,8 +34,10 @@ gsap.to('.loader-text', {
           main.style.display = 'block'
 
           gsap.fromTo('.header', {
-            y: -80
+            y: -80,
+            opacity: 0,
           }, {
+            opacity: 1,
             y: 0,
             duration: 1,
             delay: 2.6,
@@ -139,6 +141,29 @@ gsap.to('.loader-text', {
               opacity: 1,
             })
           }
+
+          // Services 
+
+          gsap.fromTo('.services-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.services-card-subtitle',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
+
+          gsap.fromTo('.services-card-container', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.services-card-subtitle',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
 
         }
       })
