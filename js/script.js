@@ -148,7 +148,7 @@ gsap.to('.loader-text', {
             y: -150,
             opacity: 0,
           }, {
-            scrollTrigger: '.services-card-subtitle',
+            scrollTrigger: '.services-card',
             y: 0,
             duration: 1.5,
             opacity: 1,
@@ -159,7 +159,7 @@ gsap.to('.loader-text', {
             y: 150,
             opacity: 0,
           }, {
-            scrollTrigger: '.services-card-subtitle',
+            scrollTrigger: '.services-card',
             y: 0,
             opacity: 1,
             delay: 0.4
