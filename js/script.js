@@ -142,7 +142,7 @@ gsap.to('.loader-text', {
             })
           }
 
-          // Services 
+          // Services section 
 
           gsap.fromTo('.services-title', {
             y: -150,
@@ -160,6 +160,31 @@ gsap.to('.loader-text', {
             opacity: 0,
           }, {
             scrollTrigger: '.services-card',
+            y: 0,
+            opacity: 1,
+            delay: 0.4
+          })
+
+          // Contact section
+
+          // Services 
+
+          gsap.fromTo('.contact-title', {
+            y: -150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.contact-container',
+            y: 0,
+            duration: 1.5,
+            opacity: 1,
+            delay: 0.2
+          })
+
+          gsap.fromTo('.contact-container', {
+            y: 150,
+            opacity: 0,
+          }, {
+            scrollTrigger: '.contact-container',
             y: 0,
             opacity: 1,
             delay: 0.4

@@ -459,4 +459,123 @@ img {
   }
 }
 
+.contact {
+  width: 100%;
+  padding: 6.7rem calc((100vw - 1350px) / 2);
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+}
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  color: #e7e4e4;
+  transition: all 0.2s ease;
+  outline: none;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  border: 1px solid #C291F2;
+  box-shadow: 0 0 25px rgba(193, 145, 242, 0.123);
+  padding-left: 0.7rem;
+  border-radius: 10px;
+}
+.contact-form input {
+  padding: 1rem 1rem 1rem 0.3rem;
+  border-bottom: 1px solid #C291F2;
+}
+.contact-form textarea {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #C291F2;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #C291F2;
+  color: #e7e4e4;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  width: 50%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.contact-form button:hover {
+  background-color: #e7e4e4;
+  color: #181818;
+}
+.contact-methods {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.contact-methods h3 {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  color: #e7e4e4;
+}
+.contact-methods ul {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contact-methods ul li h4 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+.contact-methods ul li a {
+  text-decoration: none;
+}
+.contact-methods ul li a i {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form button {
+    width: 80%;
+  }
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-methods ul {
+    gap: 45px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

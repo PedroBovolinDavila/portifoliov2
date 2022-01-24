@@ -57,10 +57,7 @@
           <a href="#services">Serviços</a>
         </li>
         <li>
-          <a href="#">Techs</a>
-        </li>
-        <li>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
 
@@ -227,139 +224,40 @@
       </article>
     </section>
 
-    <!-- <section class="techs">
-      <h2 class="title techs-title">Tecnologias</h2>
-      <section class="techs-cards-container">
+    <section class="contact" id="contact">
+      <h2 class="title contact-title">Contato</h2>
+      <article class="contact-container">
 
-        <article class="tech-cards">
-          <h3 class="subtitle">Front-end</h3>
+        <form class="contact-form" action="https://formsubmit.co/pedrodavila.bovolin@gmail.com" method="POST">
+          <input type="text" placeholder="Informe seu nome" name="name" id="name" required>
+          <input type="email" name="email" placeholder="Informe seu email" id="email" required>
+          <textarea placeholder="Sua menssagem" id="message" class="form-control" name="message" rows="10"
+            required></textarea>
+          <button id="button" type="submit">Enviar</button>
+        </form>
 
-          <div class="tech-card">
-            <img src="images/html5.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>HTML 5</h4>
-              <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Docs</a>
-            </div>
-          </div>
+        <div class="contact-methods">
+          <h3 class="contact-subtitle">Ou</h3>
+          <ul>
+            <li>
+              <h4>Whatsapp</h4>
+              <a title="Entre em contato via Whatsapp" class="social-icon" target="_blank"
+                href="https://wa.me/5543991499339">
+                <i class="fab fa-whatsapp"></i> (43) 991499339
+              </a>
+            </li>
+            <li>
+              <h4>Email</h4>
+              <a title="Entre em contato via Email" class="social-icon" target="_blank"
+                href="mailto:pedrodavila.bovolin@gmail.com">
+                <i class="fas fa-envelope"></i> pedrodavila.bovolin@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="tech-card">
-            <img src="images/css3.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>CSS</h4>
-              <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/css">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/javascript.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Javascript</h4>
-              <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/javascript">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/sass.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Sass</h4>
-              <a target="_blank" href="https://sass-lang.com/documentation">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/react.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>React</h4>
-              <a target="_blank" href="https://reactjs.org/docs/getting-started.html">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/typescript.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Typescript</h4>
-              <a target="_blank" href="https://www.typescriptlang.org/docs/">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/notIcon.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>GSAP / Greensock</h4>
-              <a target="_blank" href="https://greensock.com/gsap/">Docs</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="tech-cards">
-          <h3 class="subtitle">Back-end</h3>
-
-          <div class="tech-card">
-            <img src="images/node-js.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Node</h4>
-              <a target="_blank" href="https://nodejs.org/en/docs/">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/typescript.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Typescript</h4>
-              <a target="_blank" href="https://www.typescriptlang.org/docs/">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/mongodb.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>MongoDb</h4>
-              <a target="_blank" href="https://docs.mongodb.com">Docs</a>
-            </div>
-          </div>
-
-        </article>
-
-        <article class="tech-cards">
-          <h3 class="subtitle">Ferramentas</h3>
-
-          <div class="tech-card">
-            <img src="images/git.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Git</h4>
-              <a target="_blank" href="https://git-scm.com/doc">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/github.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Github</h4>
-              <a target="_blank" href="https://github.com/PedroBovolinDavila">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/visual-studio-code.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>Vscode</h4>
-              <a target="_blank" href="https://code.visualstudio.com">Docs</a>
-            </div>
-          </div>
-
-          <div class="tech-card">
-            <img src="images/notIcon.svg" alt="Imagem da logo do HTML">
-            <div>
-              <h4>insomnia</h4>
-              <a target="_blank" href="https://insomnia.rest/download">Docs</a>
-            </div>
-          </div>
-
-        </article>
-
-      </section>
-    </section> -->
-
+      </article>
+    </section>
 
   </main>
 

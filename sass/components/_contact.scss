@@ -1,0 +1,142 @@
+@use '../config/variables';
+
+
+.contact {
+  width: 100%;
+  padding: 6.7rem calc((100vw - 1350px) / 2);
+  background-color: variables.$dark-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 25px;
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      background: transparent;
+      color: variables.$dark-text;
+      transition: all .2s ease;
+      outline: none;
+
+      &:focus {
+        border: 1px solid variables.$purple-5;
+        box-shadow: 0 0 25px rgba(193, 145, 242, 0.123);
+        padding-left: 0.7rem;
+        border-radius: 10px;
+      }
+    }
+
+    input {
+      padding: 1rem 1rem 1rem 0.3rem;
+      border-bottom: 1px solid variables.$purple-5;
+    }
+
+    textarea {
+      margin-top: 0.5rem;
+      padding: 1rem;
+      border: 1px solid variables.$purple-5;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: variables.$purple-5;
+      color: variables.$dark-text;
+      padding: 0.7rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all .4s ease;
+      width: 50%;
+      margin-top: 10px;
+      font-size: 1.1rem;
+
+      &:hover {
+        background-color: variables.$dark-text;
+        color: variables.$dark-2;
+      }
+    }
+  }
+
+  &-methods {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+
+    h3 {
+      font-size: 2.3rem;
+      font-weight: lighter;
+      color: variables.$dark-text
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      li {
+        h4 {
+          margin-bottom: 10px;
+          font-size: 1.4rem;
+          color: white;
+        }
+
+        a {
+          text-decoration: none;
+
+          i {
+            margin-right: 5px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &-container {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &-form {
+      width: 100%;
+
+      button {
+        width: 80%;
+      }
+    }
+
+    &-methods {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 45px;
+      width: 100%;
+      text-align: center;
+
+      ul {
+        gap: 45px;
+      }
+    }
+  }
+}
