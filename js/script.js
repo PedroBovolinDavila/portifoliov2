@@ -57,7 +57,7 @@ gsap.to('.loader-text', {
           gsap.to('.hero-desc', {
             duration: 1.5,
             delay: 1,
-            text: 'Sou desenvolvedor web Front-end',
+            text: 'Sou desenvolvedor web Fullstack',
             ease: 'none'
           })
 
