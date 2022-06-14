@@ -4,6 +4,7 @@ const navbar = document.querySelector('.header-navbar');
 const header = document.querySelector('.header');
 const loader = document.querySelector('.loader');
 const body = document.querySelector('body');
+const footer = document.querySelector('.footer');
 const main = document.querySelector('.main');
 const projectCards = document.querySelectorAll('.projects-card');
 const projectCardsAnimateActivate = document.querySelectorAll('.project-card-animation');
@@ -32,6 +33,7 @@ gsap.to('.loader-text', {
           loader.style.display = 'none'
           header.style.display = 'block'
           main.style.display = 'block'
+          footer.style.display = 'flex'
 
           gsap.fromTo('.header', {
             y: -80,

@@ -1,0 +1,37 @@
+@use '../config/variables';
+
+.footer {
+  background-color: variables.$dark-2;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem calc((100vw - 1350px) / 2);
+  display: none;
+
+  &-brand {
+    color: variables.$dark-text;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color .2s;
+  
+    &:hover {
+      color: darken(variables.$dark-text, 20)
+    }
+  }
+
+  &-social-icons {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.3rem;
+    
+  }
+
+  &-social-icon {
+    color: variables.$dark-text;
+    transition: all .2s;
+
+    &:hover {
+      color: darken(variables.$dark-text, 20);
+      transform: scale(1.1);
+    }
+  }
+}

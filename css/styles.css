@@ -578,4 +578,34 @@ img {
   }
 }
 
+.footer {
+  background-color: #181818;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem calc((100vw - 1350px) / 2);
+  display: none;
+}
+.footer-brand {
+  color: #e7e4e4;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-brand:hover {
+  color: #b7aeae;
+}
+.footer-social-icons {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.3rem;
+}
+.footer-social-icon {
+  color: #e7e4e4;
+  transition: all 0.2s;
+}
+.footer-social-icon:hover {
+  color: #b7aeae;
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=styles.css.map */
